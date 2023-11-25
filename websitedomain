@@ -1,0 +1,155 @@
+git password for token -:   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
+----------------------------------------------------------------------------------------------------------------------------------------
+cloudaccess.net    joomla 
+www.galgotiasuniversity.edu.in   
+https://www.crummy.com/         
+planitagency.com          wordpress
+bloomberg.com    wordprees
+vsp.com
+sky.com
+launch.joomla.org
+irctc.co.in
+bbdu.ac.in
+www.iul.ac.in
+open.spotify.com
+tutorialpandit.com   wordpress 20.2.1
+neeraj657.wordpress.com
+www.marwadichandaranagroup.com     apache worpress 1.0
+tutorialandexample.com    php version,cloudflare,
+drupal.org
+excellenceingovernanceawards.indianexpress.com
+gmware.com
+parle.com
+www.examcompass.com    joomla
+www.axishistory.com  joomla
+www.linux.com      wordpres
+allbirds.com          shopify
+www.nestle.com           magento
+jonburgerman.com      gatsby 3.5.0
+sephora.com             wix
+spikeball.com             shopifhy
+gohugo.io        hugo
+getgrav.org   getgrav
+silverstripe.org      silverstripe
+concrete5.org         concreate CMS
+umbraco.com               umbraco
+craftcms.com         craftcms
+textpattern.com      textpattern cms
+pyrocms.com            pyrocms
+cmsmadesimple.org   cmsmadesimple
+plone.org                plone
+plone.org         processwire cms
+getkirby.com    kirby
+boltcms.io    bolt
+jekyllrb.com      jekyllrb with version
+https://youradchoices.com/    x-generator drupal 7
+https://www.eeoc.gov/           drupal 9  x-gen
+https://www.shockwave.com/       drupal 7 x-gen
+https://adage.com/              drupal 9 x-gen
+https://www.kzbv.de/    papaya cms         x-gen
+https://murzilka.org/     nethouse   x-gen
+https://nethouse.me/       nethouse x-gen
+https://opendyslexic.org/    backdrop cms 1
+marlinfw.org     Jekyll v3.9.0
+https://wpzone.co/docs/   Docusaurus v2.2.0
+pangea.hisense.com       Docusaurus v2.2.0
+publitas.com    elementor 3.12.1
+
+https://www.yorokonde.de/   Shopware
+dps.sd.gov                     concrete5
+www.strathmoreartist.com    contao
+
+['agriculturalmark.com','virojmoter.com','badelust.com','farbzauber.net','lipidiopharma.com','geraldo.com','mumpitz.blog','badewonne.com',
+'fedefutguate.org','lawlab.org','mikona.eu','rosakhutor.com','mission4today.com','danartinc.com','fun-karting.com','daportare.nl','allbirds.com','umbraco.com','gohugo.io','silverstripe.org','craftcms.com','plone.org','plone.org',
+'getkirby.com','boltcms.io','jekyllrb.com','youradchoices.com','kzbv.de','murzilka.org','marlinfw.org','pangea.hisense.com']
+meta generator.............................................
+
+agriculturalmark.com                NukeViet v4.0
+virojmoter.com                ECSHOP v2.7.3
+www.smsofva.com/Web/                         C1 CMS              1
+badelust.com                 CMS Contenido 4.8                               badewonne.com
+farbzauber.net                   Pagekit
+ lipidiopharma.com               Bludit CMS      author                   3
+ geraldo.com                Microweber
+ mumpitz.blog              Anchor CMS
+fedefutguate.org               Vivvo v4.7
+lawlab.org                 BrowserCMS 3.1.3
+mikona.eu                        ShopSys.cz                         4
+rosakhutor.com              Ensi Platform
+ mission4today.com            CPG Dragonfly CMS
+ danartinc.com                 TomatoCart            powered-by
+ fun-karting.com               AquilaCMS
+ daportare.nl               Coaster CMS v5.4.11
+ 
+
+
+api................................
+
+1---https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=drupal+7
+2----base_url = "https://services.nvd.nist.gov/rest/json/cves/1.0"
+
+# Set the search parameters for the API query
+params = {
+    "keyword": "Drupal 7",
+    "resultsPerPage": 20,
+    "startIndex": 0,
+}
+appserver.........................
+
+when asp.net then he gives new header name is [X-AspNet-Version]..............https://gru.com/
+
+cms header is below.................................
+x-generator= drupal  
+powered-by      prestrashop
+x-content-powered-by         joomla(k2)
+generator      mura cms                         deltadentalok.org
+x-content-encoded-by                    Joomla 
+.......................................
+upvad....
+X-Powered-By: C1 CMS     https://idmi.net/
+
+url=['tutorialpandit.com','billieeilish.com','abtakapakesath.com','ec2software.com','esic.gov.in','datasciencelearner.com']
+
+openssll..........................
+geraldo.com
+galgoritauniversity                                  . it was showing but now it's not showing.
+crummy.com
+microtek.ac.in
+
+x-powered-by ,i have to set code for name and version......................
+'goyalstores.in', 
+
+x-powered-by and x-aspnet-version
+gbu.ac.in
+
+
+
+dns security;-------------------------------------------------------------------------------------------------------------------------5/6/23
+
+To check if DNSSEC is enabled for a domain, you can query the DNSKEY record type as mentioned earlier. If the DNSKEY record is present, it indicates that DNSSEC is likely enabled for the domain.
+
+
+
+system_reputation---------------------------------------------------------------------------------------------------------------------18/6/23
+
+1-:   dnsrbl.swinog.ch (Realtime blacklist assembled by spamtraps)
+2-:   spamrbl.swinog.ch (IP-adresses from catched spammails)
+3-:   truncate.gbudb.net
+4-:   dnsbl-1.uceprotect.net
+5-:   dnsbl-2.uceprotect.net
+6-:   dnsbl-3.uceprotect.net
+7-:   blacklist.woody.ch
+8-:   db.wpbl.info
+9-:   dnsbl.zapbl.net.
+10-:  rbl.0spam.org
+11-:  rbl.abuse.ro
+12-:  spam.dnsbl.anonmails.de
+13-:  ips.backscatterer.org
+14-:  b.barracudacentral.org
+15-:  b.barracudacentral.org
+16-:  dnsbl.calivent.com.pe
+17-:  torexit.dan.me.uk
+18-:  tor.dan.me.uk
+19-:  rbl.dns-servicios.com
+20-:  
+

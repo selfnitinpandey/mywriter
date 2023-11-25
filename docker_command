@@ -1,0 +1,144 @@
+step setup docker in linux:
+		1: setup repository in your laptop ,like gpg key
+		2: download deb package of docker-desktop and install it
+			-:sudo apt-get update
+			-:sudo apt install ...download deb package path and name...
+			
+check docker install or not:
+		1:sudo docker run hello-world
+	
+check dockerversion:
+	        1: docker --version
+	        2: docker compose --version
+	        3: docker version
+ 
+start/stop/status docker-desktop:
+		1: systemctl --user start docker-desktop
+		2: systemctl --user status docker-desktop
+		3: systemctl --user status docker-desktop
+
+process of docker: 
+		dockerfile  ->  docker image  ->  docker container
+		
+command of docker:
+		docker images   -> for see images
+		docker pull	-> for pull images
+		docker run  	-> for run images
+		docker search	-> for search images
+		docker ps	-> for list container and use (flag -a)       docker ps -a 
+		docker inspect (container id)	-> see all details related to exit or start container
+		docker rm	-> remove docker container
+		docker exec	-> run any command related to container when container will be in running mode. 
+				    docker exec -it (running container name) (command of container).
+				    if you want to open bash the use /bin/bash (place on command of container)
+		docker stop	-> stop the running container
+		docker start	-> start the stoping container
+		docker restart	-> restart the container
+		docker rmi	-> remove docker images  (but first remove all container of images)
+		docker container prune	-> remove all stop container at a time.
+		docker system prune	-> remove all images at a time
+		docker logs	-> check logs of container  (using debuging time)
+		docker build	-> make a image from docker file.                  (FROM,COPY,RUN,CMD,WORKDIR)
+		docker rename	-> change name of container. -: docker rename (container id ) (New Name)
+		docker pause/unpause	-> pause and unpause docker container
+		docker create	-> pull and create container , this will not run container
+		docker diff 	-> check container, which file add or change or any operation.
+		docker cp	-> copy file,  -: docker cp (what copy) (where copy)
+		docker commit	-> create image from running container
+		docker tag	-> for make a replica of image with dockerhub username
+		docker push	-> upload a image on docker repository
+		docker login	-> login user, beacuase when we push image then will authenticate from docker account by username and password
+		docker history	-> get a history of an Image.
+		docker save	-> save An image in .tar file   (save > tarfilename.tar)
+		docker load	-> load tar file and make image	(load < tarfilename)
+		docker volume create	-> for create volume for container
+		docker volume ls	-> see all volume
+		docker volume rm	-> delete volume 
+		docker network ls	-> see all network
+		docker volume help	-> see all command related volume
+		docker network help 	-> see all command realted network
+		
+Dockerfile KeyWord:
+		LABEL	-> for create label
+		RUN	-> for Run the line
+		ENV	-> for create environment
+		WORKDIR	-> for work any directory ,define by you
+		USER	-> for change user
+		COPY	-> copy file from a folder   (COPY whatcopy wherecopy)
+		ADD	-> Same as copy but when we want to copy .tar file or any url that will automatically extract and copy all data.
+		CMD	-> set command that will run when docker container run.   CMD ["python3",.....].  default
+		EXPOSE	-> Expose port 
+		ENTRYPOINT	-> Set Entry point. ENTRYPOINT ["...."]. Define core functionalty of command.
+		
+		
+		
+use some flags in docker command:
+		--name	-> define name for container
+		-d	-> run container in background and print container id
+		-i	-> provide intractive mode
+		-t	-> provide intractive terminal and gives a session for some time        (we can use both ,-it)
+		--rm	-> create container when container will be exit then automatically deleted container
+		-e	-> for environmental variable
+		-p 	-> for define port for nginx,apache(httpd image)
+		-f 	-> forcefully remove docker image   (docker rmi -f image_name)
+
+some linux command to check process:
+		ps aux		-> check which process running in background.
+		netstat -nltp	-> check all port ,which is active.
+		watch		-> watch any docker every two second automatically
+		hostname	-> check hostname 
+		hostname -I	-> check hostname ip
+
+Docker-compose yml:
+		docker-compose help	-> see all command 
+		docker-compose up -d 	-> create docker container container in background(-d)
+		docker-compose create	-> create container
+		docker-compose down 	-> shutdown docker container( if we want delete volume use '--volume',after the down)
+		docker-compose -f 'filename' -d	-> create container using any .yaml file,  (we can container using json file also)
+		docker-compose rm	-> remove docker container
+		docker-compose start	-> start container
+		docker-compose stop	-> stop container
+		docker-compose kill	-> kill container
+		docker-compose port	-> check which port on which machine port available
+		docker-compose logs -f	-> check logs of container
+		docker-compose ps	-> check running container
+		docker-compose exec	-> Execute any command in running container.
+		docker-compose run	-> Same as work EXEC but it will craete new container and run then exits.
+		docker-compose scale	-> make more container of your conatiner. Example-: (docker-compose scale webapp1=4 webapp2=2)
+		docker-compose top	-> check running container
+		docker-compose push	-> push image . formate will be-:(username/imagename:tagname)
+		docker-compose pull	-> pull image
+		
+		(SOME_TOPICS)-: Bindmount, build,args,context,image,container_name,dockerfile,environment,env_file
+		
+					 
+		
+Note-:
+    1> we can run cmd of image direct without using exec and without running in background means(directly)
+    2>	Dockerfile work as layerd base architexture , Means Line by line in.
+    3> For all line ,he does create seperate container.
+    4> we can use (-v) for bind mount,if we give full path then work as bindmount or work as volume
+    
+    rhcsa
+  
+﻿
+
+SOLUTION-:install firefox and driver with selenium in docker contaier.
+
+
+
+FROM python:3.8-alpine
+COPY. /
+RUN apk update && \
+    apk add tzdata zip build-base python3-dev gcc libc-dev libffi-dev  firefox && \
+    rm -rf /var/cache/apk/* && \
+    pip install --upgrade pip && \
+    pip3 install -r requirements.txt && \
+    apk add --no-cache --virtual .build-deps curl && \
+    curl -LO https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz && \
+    tar -xvzf geckodriver-v0.30.0-linux64.tar.gz -C /usr/local/bin && \
+    chmod +x /usr/local/bin/geckodriver && \
+    rm geckodriver-v0.30.0-linux64.tar.gz && \
+    apk del .build-deps
+    
+
