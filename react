@@ -1,10 +1,84 @@
 									React
+1) Introduction of ReactJs-:
+		Reactjs is a library of of javascript. with the help of we can make front end. we can make a component and use this 
+		many time. Reactjs library created by Facebook. It work on signle page application.
 
-6-: VirtualDom ,fibre and reconsiliation-: 
-			Reconsiliation is an algorithm that will diffrenciate  of two tree.
-			This is a virtualdom. 
-			Fiber is new algorithims.
-7-: Tailwind and props-: 
+2) How Reactjs work-: 
+		It will create virtual dom. this compare from old virtual dom and check where is change then on that place that change.
 			
-				
-				
+3) What is Bable-: 
+		Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers. Babel 
+		enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript 
+		for use in React components and all browsers. 
+		
+4) What is JSX-:	
+           	JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
+           	
+5) Directory Structure-:
+		node_modules: It contains all packages and dependencies install.
+		public:	
+			1) favicon.ico: It is favicon for website.
+			2) index.html:  It file load html templates of our app.
+			3) manifest.json: It provide metadata used when your webpage is installed on user mobile device or desktop.
+		src:
+			1) App.css: it is css file realated to App.js. it work as  global.
+			2) App.js:  it parent component of react app.
+			3) App.test.js: It test environment.
+			4) index.css: it is css file related to index.js. it work as global.
+			5) index.js: it is Entry point of app.
+			6) logo.svg: react logo file.
+			7) serviceWorker.js: It can help to access website offline.
+		.gitignore:It is used when you want to ignore git push.
+		package-lock.json: it version control package json file.
+		package.json: All dependencies mentioned in file.
+		README.md: It readme file.
+		
+6) render(),React.createElement(),ReactDom-:
+		import React from 'react';
+		import ReactDOM from 'react-dom/client';
+		import App from './App';
+		const root = ReactDOM.createRoot(document.getElementById('root'));
+		root.render(
+		    <App />
+		);
+
+7) What is React Fragement-:
+		​ React Fragment is a feature in React that allows you to return multiple elements from a React component by allowing you to 	 
+		 group a list of children without adding extra nodes to the DOM.
+	         Example:
+	         	root.render(
+	         	<> ------This is fragement.
+			    <App />
+			</>
+			);
+			
+8) What is function and class component-:
+		Function: A functional component is a simpler and more concise way to define UI components using only functions.
+				  const FunctionalComponent = () => {
+				  return (
+				    <div>
+				      Hello, I'm a functional component!
+				    </div>
+				  );
+				};
+				export default FunctionalComponent;
+   		Class: this uses ES6 class syntax and includes additional features such as state and lifecycle methods.
+   				import React, { Component } from 'react';
+				class ClassComponent extends Component {
+				  render() {
+				    return (
+				      <div>
+					Hello, I'm a class component!
+				      </div>
+				    );
+				  }
+				}
+				export default ClassComponent;
+
+9) Props in react-: 
+		
+
+
+
+
+
