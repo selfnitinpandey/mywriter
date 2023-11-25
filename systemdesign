@@ -1,0 +1,65 @@
+								System Design
+-: Types of system design:
+		HLD-> Describe the main components, that would be developed for the resulting product.Example: system architecture details ,database design,service and
+		      processes, the relationship between various module and features.
+		LLD-> describe the design of each elements mentioned in high level design of the system. classes interface relationship between different classes and 
+		      actual logic of the various components.
+		      
+-: monolithic architecture:
+		Internal design details for building the applications.if backend,fronend,database written with together and deployed together is called monolithic.
+		monolithic has less complexity -> easier to understand -> higher productivity.
+		monolithic system also a centralised system.
+		Web-applcation: 
+				i) front End , 2) back End, 3) database.
+				
+-: difference between monolithic and microservices:
+		Monolithic architecture is a unified, tightly integrated system, while microservices architecture decomposes an application into small, independent
+		services that communicate through APIs, enabling scalability and independent development.
+
+-: what is latency in networking:
+		network latency means request and computational calculation and getting response , will be time count in network latency.   t=t1+t2+T3.
+		In monolithic network latency less than microservices.
+		how to minimize network latency-: 1) cache. 2) cdn.  3) upgrade system.
+		
+-: what is throughput:
+		The volume of work or information flowing through a system.Throughput is a amount of data transmitted per unit of time.it is processflow of rate.
+		Throughput measure in bit per second. (bps).
+		cause of low latency: 1) latency. 2) protocol overhead. 3) congestion.
+		improving throughput: 1) cdn. 2) caching. 3) upgrade system. 4) microservices. 5) load balancing.
+
+-: what is availbility.(replication and redundancy):
+		Always be ready for giving response for all request like as google. 
+		how to increase the availbility: 1) replication. 2) microservices. 3) redundancy.
+		what is redundancy: redundancy is the duplication of nodes in case of some of them are failing.
+		Note: Redundancy apply on server And replication apply on databases.
+
+-: what is consistency:
+		consistency means by example when a user book one ticket then automatically should be show to another user that how many seat are available.
+		Improving consistency: 1) increase network bandwidth. 2) stop and read. 3) replication based on distance aware strategies.
+		Types of consistency: 1) strong. 2) Eventual. 3) Weak.
+		
+-: what is cap theorem:
+  		C=  Consistency.    A= Availbility. P= partition Tolerance.
+  		In at one time only two thing we can achive. like as: CP or AP or PC.
+  		Partition Tolerance must be in application.
+
+-: What is Lamport Logical clock:
+ 		Technique to check that which event when occurre in microservices archtecture(distributed).
+ 		
+-: Diffrence between Horizontal and vertical Scaling:
+		When we want to increase our server size.
+		Horizontal-: work in microservices. 
+			 pros= 1) overcome of vertical cons.
+			 cons= 1) all vertical scaling pros is here cons.
+		vertical-: work in monolithics.
+			pros= 1) Easy implementation. 2) less power. 3) management easy.
+  			cons= 1) single point of failure 2) limit of harddisk.
+		
+		
+		
+		
+		
+				
+		
+				
+

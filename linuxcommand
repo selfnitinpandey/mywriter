@@ -1,0 +1,89 @@
+Linux command-:
+	uname		-> print kernel name.
+	uname -a	-> for all details.
+	man uname	-> check manual page  of any command. 
+	hostname	-> print hostname.		
+	whoami		-> check username. 		
+	sudo		-> Perform any command in root user.
+	sudo -i		-> use terminal within root user.
+	sudo tty	-> check standard filename.
+	clear		-> clean terminal.
+	users		-> check login users.
+	adduser		-> add new user.
+	id		-> gives user all information.
+	groups		-> see all groups name.
+	su		-> switch user using terminal.
+	usermod -a -G	-> user modify and gives privilages.
+	addgroup	-> make a new group.
+	delgroup	-> delete a group.
+	passwd		-> change user password .
+	date		-> see date and time.
+	cal		-> see calendar
+	echo		-> print any sentences on terminal.  (-e,)
+	pwd		-> check present working directory.
+	cd		-> change directory.   (cd ..)(cd -)(cd ~)(cd /)
+	touch		-> create new file. if use dot(.) before file will be hiddenf filel.
+	bc		-> open calculator on terminal.
+	head		-> get from START 10 line from file.
+	tail		-> get from END 10 line from file.
+	more		-> get line of file in scroll way easly frp, from above side.
+	less		-> get line of file in scroll way easly frp, from down side.
+	wc		-> word count of text file.
+	cut		-> cut the command according to index. (tab).
+	file		-> tell use type of file. 
+	who		-> which use login tell us.
+	sort		-> sort the file content .
+	cat>filename	-> write file on terminal,(Note: we can save any command result in file.)
+	cat<filename	-> read file on terminal.   
+	cat >> filename	-> write file on append mode.
+	| -:(pipe)	-> pipe , Example -: (ls | sort).
+	mkdir		-> make directory.
+	rmdir		-> delete directory.
+	rm		-> delete directory or file. (-rvf)(-r)(-rv)
+	ls		-> list of present working directory.  (-a)(-l)(-lh)
+	ln		-> link, make shortcuts of path.	(-s)
+	c  (src desti)	-> copy file or directory any place. when we will copy directory use (-rvf).
+	mv		-> move directory or file one place to another place.
+	chmod		-> change mode. for permission file and folder.
+				1st way= u:user,g:group,a:all,o:others. like-as (u+r)(go-w)(a+x).
+				2nd way= octal number.  
+					4= read
+					2= write
+					1= execute
+	which		-> see path of command .
+	umask		-> set default permission.  example-(umask 022)   rwx.
+	chgrp		-> change group. (chgrp username filename). example-(chgrp test_user test.txt).
+	chown		-> change user.( chown username filename). example-(chown test_user test.txt).
+	mount		-> mount a isoimage or harddisk in folder for accesss.
+	umount		-> for unmount.
+	mountpoint	-> check for which folder mount?.
+	du		-> check disk usage according to locations.
+	df		-> check disk usage filename with mounted folder.
+	lsblk		-> check list block devices.
+	fdisk -l	-> see all devices name and information.
+	gzip		-> compress file size, (zip file).
+	gunzip		-> uncompress zip file.
+	ss -tuln	-> see all ip and port.which is working.
+	netstat -tuln	-> same as ss . (-t,tcp) (-u,udp) (-l,listen) (n,display numric ip and port).
+	alias		-> set alias for any command.(alias newaliasname=whatmakeyoualias).
+	unalias		-> remove alias . alias(alias aliasname).
+	
+Permission_structure->
+	
+	-,d   	-> represent folder(d) and file (-) directory.
+	---  U	-> User     (Read,write,execute)
+	---  G	-> Group    (Read,write,execute)
+	---  O	-> Other    (Read,write,execute)
+
+Flags-:
+
+	-r 	-> recursively delete,copy.
+	-rvf	-> delete forcely folder/file.
+	-a	-> see hidden file or folder.
+	-l	-> see long list file or see permission.
+	-lh	-> see size in kb.
+	-li	-> see inode number.
+	
+	
+	
+
