@@ -1,0 +1,44 @@
+									Jenkins
+									
+1-: What is jenkins:
+		Jenkins is an open-source automation server that facilitates continuous integration and continuous delivery (CI/CD) of software development projects. It 
+		enables automated building, testing, and deployment, helping teams streamline their development processes.
+
+2-: Why use jenkins: 
+		Jenkins is used to automate and streamline the software development lifecycle by enabling continuous integration, testing, and deployment, enhancing 
+		collaboration and efficiency in development teams.
+		
+3-: Installation of Jenkins:	
+		Step1- Install java in the localserver or live server.
+			sudo apt update
+			sudo apt install fontconfig openjdk-17-jre
+			
+		     check install or not java-: java -version
+		 
+		 Step2- Install jenkins. 
+		 	sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+			  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+			  
+			echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+			  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+			  /etc/apt/sources.list.d/jenkins.list > /dev/null
+			  
+			sudo apt-get update
+			sudo apt-get install jenkins
+			
+		Step3- Login.
+		      Get password: sudo cat /var/jenkins_home/secrets/initialAdminPassword 
+		      Username	:   admin
+		      host	: http://localhost:8080
+
+4-: Overview of dashboard:
+		- New Item: for create New job 
+		- People : Add new people
+		- build History: make a history related to job
+		- Manage Engine: We can manage all setting .
+		- Build queue: 
+		- Build executer status: 
+
+5-: Create Jenkins job:
+		
+		
